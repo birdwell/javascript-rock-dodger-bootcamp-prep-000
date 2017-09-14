@@ -163,7 +163,7 @@ function moveDodgerRight() {
    const left = 0;
    window.requestAnimationFrame(() => {		
      left += 4;
-     const currentLeft = positionToInteger(DODGER.style.left);
+     let currentLeft = positionToInteger(DODGER.style.left);
      if (left < 360) DODGER.style.left = `${currentLeft + 4}px`;
    });  
 }
