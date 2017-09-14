@@ -91,7 +91,8 @@ function createRock(x) {
         * Otherwise, if the rock hasn't reached the bottom of
         * the GAME, we want to move it again.
         */
-       move(rock);
+        el.style.top = `${rock.style.top += 2}px`;
+        window.requestAnimationFrame(moveRock)
      } else {
        /**
         * But if the rock *has* reached the bottom of the GAME,
