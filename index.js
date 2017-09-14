@@ -91,7 +91,7 @@ function createRock(x) {
         * Otherwise, if the rock hasn't reached the bottom of
         * the GAME, we want to move it again.
         */
-        el.style.top = `${rock.style.top += 2}px`;
+        rock.style.top = `${rock.style.top += 2}px`;
         window.requestAnimationFrame(moveRock)
      } else {
        /**
@@ -150,7 +150,7 @@ function moveDodgerLeft() {
    */
    var left = 0;
    function step() {
-     el.style.left = `${left -= 2}px`
+     DODGER.style.left = `${left -= 2}px`
   
      if (left < -4) {
        window.requestAnimationFrame(step)
@@ -168,7 +168,7 @@ function moveDodgerRight() {
    */
    var left = 0;
    function step() {
-     el.style.left = `${left += 2}px`
+     DODGER.style.left = `${left += 2}px`
   
      if (left < 4) {
        window.requestAnimationFrame(step)
